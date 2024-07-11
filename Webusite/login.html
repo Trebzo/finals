@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+ 
+</head>
+<body>
+    <form action="https://formsubmit.co/slsuls.ozbertsales@gmail.com" method="POST" /> 
+        <h2>Log In</h2>
+        <div class="inputBox">
+            <input type="email" name="email" required>
+            <label>EMail</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Create">
+        </div>
+        <p>Don't have an Account ? <a href="regform.html">Sign Up</a></p>
+    </form> 
+   
+    <script>
+        let label = document.querySelectorAll('label').forEach(label =>
+        {label.innerHTML = label.innerText.split('').map((letters, i) =>
+        `<span style="transition-delay: ${i * 50}ms">${letters}</span>`).join('');
+        });
+    </script>
+</body>
+</html>
